@@ -1,0 +1,1 @@
+jaydata.js patched!!!

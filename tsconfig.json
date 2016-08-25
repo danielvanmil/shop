@@ -10,14 +10,16 @@
         "suppressImplicitAnyIndexErrors": true,
         "sourceMap":true,
         "experimentalDecorators":true,
-        "watch":false
+        "watch":false,
+        "allowJs":false
     },
     "filesGlob": [
         "./src/**/*.ts",
         "!./node_modules/**/*.ts"
     ],
-    "exclude": [],
+    "exclude": [ "build" ],
     "atom": {
         "rewriteTsconfig": true
-    }
+    },
+    "buildOnSave": true
 }

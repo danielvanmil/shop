@@ -4,10 +4,13 @@ declare module polymer {
         AppLayout: any;
     }
 }
- 
+
 interface Navigator {
     serviceWorker: any;
 }
+
+declare var require: any;
+declare var JayDataExamples: any;
 
 @component("shop-app")
 
@@ -43,13 +46,26 @@ class ShopApp extends polymer.Base
     created() {
         window.performance && performance.mark && performance.mark('shop-app.created');
         this.removeAttribute('unresolved');
-    };
+
+    };    
     
     ready() {
         Polymer.RenderStatus.afterNextRender(this, function () {
             this.listen(window, 'online', '_notifyNetworkStatus');
             this.listen(window, 'offline', '_notifyNetworkStatus');
         });
+                
+        //var genres = new GenresViewModel.GenresViewModel({ name: "oData", oDataServiceHost: "http://jbossdv-stbcs.rhcloud.com/odata/basplus" });
+        //genres.genres.forEach(genre => console.log());
+       
+        //var JayDataExamples: any;
+        //var northwind = new JayDataExamples.NorthwindDB.NorthwindEntities({  name: 'oData', oDataServiceHost: 'http://jaydata.org/examples/Northwind.svc' });
+        /*
+        northwind.onReady(function(){
+            console.log("ready");
+            northwind.Categories.forEach(genre => console.log(genre));
+        });
+        */
     };
     
     @observe("routeData.page")
