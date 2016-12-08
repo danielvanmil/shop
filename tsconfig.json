@@ -8,16 +8,24 @@
         "noLib": false,
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
-        "sourceMap":true,
-        "experimentalDecorators":true,
-        "watch":false
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "watch": false
     },
     "filesGlob": [
         "./src/**/*.ts",
-        "!./node_modules/**/*.ts"
+        "!./node_modules/**/*.ts",
+        "bower_components/polymer-ts/*.ts"
     ],
     "exclude": [],
     "atom": {
         "rewriteTsconfig": true
-    }
+    },
+    "files": [
+        "./src/shop-app.ts",
+        "./src/shop-category-data.ts",
+        "./src/types.d.ts",
+        "bower_components/polymer-ts/polymer-ts.d.ts",
+        "bower_components/polymer-ts/polymer-ts.ts"
+    ]
 }
