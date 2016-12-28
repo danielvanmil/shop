@@ -21,7 +21,7 @@
     "paper-icon-button": "polymerelements/paper-icon-button#^1.0.0",
     "paper-spinner": "polymerelements/paper-spinner#^1.0.0",
     "polymer-ts": "~0.1.28",
-    "o.js": "#ef525c8"
+    "o.js": "danielvanmil/o.js#master"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"
