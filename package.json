@@ -1,0 +1,29 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "### Setup",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielvanmil/shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielvanmil/shop/issues"
+  },
+  "homepage": "https://github.com/danielvanmil/shop#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-vulcanize": "^6.1.0",
+    "gulp-war": "^0.1.4",
+    "gulp-zip": "^3.2.0",
+    "polymer-build": "^0.5.1"
+  }
+}

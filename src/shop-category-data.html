@@ -8,10 +8,17 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
+
 <link rel="import" href="../bower_components/polymer/polymer.html">
+
+<link rel="import" href="./shop-odata/shop-odata.html">
 
 <dom-module id="shop-category-data">
 
+  <template>
+    <shop-odata url="http://spintheblack.cloudapp.net/odata4/public/vm/" categories="{{ categories }}"></shop-odata>
+  </template>
+  
   <script src="shop-category-data.js"></script>
 
 </dom-module>

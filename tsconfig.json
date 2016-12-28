@@ -22,8 +22,12 @@
         "rewriteTsconfig": true
     },
     "files": [
+        "./src/my-element/my-element.ts",
+        "./src/my-element/test/test.ts",
         "./src/shop-app.ts",
         "./src/shop-category-data.ts",
+        "./src/shop-odata/shop-odata.ts",
+        "./src/shop-odata/test/test.ts",
         "./src/types.d.ts",
         "bower_components/polymer-ts/polymer-ts.d.ts",
         "bower_components/polymer-ts/polymer-ts.ts"
